@@ -43,7 +43,6 @@ nav ul li {
   list-style: none;
   text-transform: uppercase;
   font-size: 13px;
-
 }
 
 nav ul li a {
@@ -51,9 +50,7 @@ nav ul li a {
   text-decoration: none;
   color: white;
   padding: 15px;
-
 }
-
 
 nav.right {
   margin-left: 5vw;
@@ -66,6 +63,11 @@ nav.right {
   padding: 5px;
 }
 
+.button > a {
+  color: white;
+  text-decoration: none;
+}
+
 .blue.button {
   border-color: white;
 }
@@ -73,6 +75,10 @@ nav.right {
 .green.button {
   background-color: green;
   border-color: green;
+}
+
+.green.button.large {
+  padding: 15px;
 }
 
 .head_bottom {
@@ -85,17 +91,16 @@ nav.right {
 }
 
 /* main */
-
 .title {
   position: relative;
   top: 30%;
-  width: 40vw;
+  width: 60%;
   color: white;
   font-size: 25px;
 }
 
 .title > h1 {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .main_top {
@@ -106,9 +111,6 @@ nav.right {
   margin-bottom: 50px;
 }
 
-.main_top p, div.col p {
-  color: #585c5e;
-}
 
 .main.container {
   width: 70%;
@@ -126,7 +128,7 @@ nav.right {
 }
 
 .col_img > img {
-  height: 100px;
+  height: 20vh;
 }
 
 div.col_text h3 {
@@ -138,8 +140,11 @@ div.col_text hr {
   margin: 15px auto;
 }
 
-div.col.leftt_bottom {
-  width: 500px;
+div.col.leftt_bottom{
+  width: 30vw;
+}
+div.col.leftt_bottom img {
+  width: 100%;
 }
 
 .bottom_row {
@@ -155,25 +160,48 @@ div.col.right_bottom h3 {
   padding: 10px 0;
 }
 
+.main_top > p,
+h3 ~ p,
+div.col.right_bottom p {
+  color: grey;
+}
+
 div.col.right_bottom a {
   color: #1683da;
 }
 
 /* footer */
 footer {
-
-  height: 10vh;
+  height: 15vh;
   background-color: lightgrey;
 }
 
 footer h2 {
-  line-height: 10vh;
-  margin-left: 10vw;
+  line-height: 15vh;
   vertical-align: middle;
   display: inline;
 }
 
-div.bottom_nav{
+footer .container {
+  position: relative;
+}
+
+div.bottom_nav {
+  position: absolute;
+  top: 40%;
+  right: 0;
   display: inline;
-  text-align: right;
+}
+
+.bottom_nav span {
+  color: grey;
+  padding: 0 5px;
+}
+
+span.select {
+  border-bottom: 1px solid grey;
+}
+
+span.select::after {
+  content: "\25be";
 }
