@@ -8,6 +8,12 @@ body {
   font-family: 'Nunito', sans-serif;
 }
 
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 header {
   width: 100%;
   background-color: #090369f2;
@@ -97,12 +103,23 @@ nav.right {
 .container {
   width: 70%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .col {
-  width: 40vh;
+  width: 45vh;
+  float: left;
+  padding: 20px;
+}
+
+.col.middle {
+  margin: 0 30px;
 }
 
 .col_img > img {
-  width: 50%;
+  height: 100px;
+}
+
+div.col_text h3 {
+  color: green;
 }
