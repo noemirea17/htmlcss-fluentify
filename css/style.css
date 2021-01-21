@@ -13,10 +13,16 @@ body {
   display: table;
   clear: both;
 }
-
+/* header */
 header {
   width: 100%;
   background-color: #090369f2;
+}
+
+#logo {
+  display: inline;
+  margin-left: 10vw;
+  vertical-align: middle;
 }
 
 header nav {
@@ -44,11 +50,6 @@ nav ul li a {
 
 }
 
-#logo {
-  display: inline;
-  margin-left: 10vw;
-  vertical-align: middle;
-}
 
 nav.right {
   margin-left: 10vw;
@@ -79,6 +80,8 @@ nav.right {
   background-repeat: no-repeat;
 }
 
+/* main */
+
 .title {
   position: relative;
   top: 30%;
@@ -98,6 +101,10 @@ nav.right {
   background-color: lightgrey;
   text-align: center;
   margin-bottom: 50px;
+}
+
+.main_top p, div.col p {
+  color: #585c5e;
 }
 
 .container {
@@ -129,10 +136,35 @@ div.col_text hr {
   margin: 15px auto;
 }
 
+div.col.leftt_bottom {
+  width: 500px;
+}
+
 .bottom_row {
 margin: 20px auto;
 }
 
 div.col.right_bottom {
   text-align: left;
+}
+
+div.col.right_bottom h3 {
+  font-size: 25px;
+  padding: 10px 0;
+}
+
+div.col.right_bottom a {
+  color: #1683da;
+}
+
+/* footer */
+footer {
+  height: 10vh;
+  background-color: lightgrey;
+}
+
+footer h2 {
+  line-height: 10vh;
+  margin-left: 10vw;
+  vertical-align: middle;
 }
