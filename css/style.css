@@ -101,13 +101,13 @@ nav.right {
 }
 
 .container {
-  width: 70%;
+  width: 70vw;
   margin: 0 auto;
   text-align: center;
 }
 
 .col {
-  width: 45vh;
+  width: 20vw;
   float: left;
   padding: 20px;
 }
@@ -122,4 +122,17 @@ nav.right {
 
 div.col_text h3 {
   color: green;
+}
+
+div.col_text hr {
+  width: 30%;
+  margin: 15px auto;
+}
+
+.bottom_row {
+margin: 20px auto;
+}
+
+div.col.right_bottom {
+  text-align: left;
 }
